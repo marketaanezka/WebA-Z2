@@ -1,0 +1,32 @@
+
+.check-burger{
+  display: none;
+}
+.header__menu {
+  display: none;
+}
+
+.check-burger:checked ~ .header__menu {
+  display: flex;
+}
+
+.burger-menu {
+  display: flex;
+  align-items: center;;
+  flex-direction: row-reverse;
+  width: 80%;
+}
+
+@media (min-width: 800px) {
+  .burger-menu {
+    width: 60%;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+  }
+}

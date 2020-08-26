@@ -17,25 +17,35 @@
       <!-- header -->
       <div class="header">
         <img
-          class="header__logo"
+          class="header__logo--tablet"
           src="images/logo.svg"
           alt="Cestovka logo"
           width="237"
           height="30"
         />
+        <img
+        class="header__logo--mobile"
+        src="images/logo-mobile.png"
+        alt="Cestovka logo"
+        width="40"
+        height="40"
+      />
 
-        <input type="checkbox" name="menu" id="menu">
-        <label for="menu">
-          <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
-          </div>
 
-        </label>
-        <nav class="header__menu">
-          <a class="header__item" href="#">Last minute</a>
-          <a class="header__item" href="#">Destinace</a>
-          <a class="header__item" href="#">Časté otázky</a>
-        </nav>
+        <div class="burger-menu">
+          <input class="check-burger" type="checkbox" name="menu" id="menu" />
+
+          <label for="menu">
+            <div class="menu-btn">
+              <div class="menu-btn__burger"></div>
+            </div>
+          </label>
+          <nav class="header__menu">
+            <a class="header__item" href="#">Last minute</a>
+            <a class="header__item" href="#">Destinace</a>
+            <a class="header__item" href="#">Časté otázky</a>
+          </nav>
+        </div>
       </div>
 
       <!-- top-offer -->
@@ -196,5 +206,6 @@
         <p class="footer__text">&copy2020, Web od A do Z #2</p>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
