@@ -1,0 +1,17 @@
+body {
+  font-family: $myFont;
+}
+
+h1{
+  color: $myColor;
+  background-color: $myHeader;
+  border: 2px solid $darkerColor;
+}
+
+
+.box {
+  height: 200px;
+  background-color: gray;
+  border: 2px solid green;
+  @include flex-center;
+}

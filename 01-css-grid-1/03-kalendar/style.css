@@ -1,0 +1,47 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+/* ---------------------------------------------------- */
+
+.kalendar {
+	list-style-type: none;
+	font-weight: 100;
+	display: grid;
+	grid-template-columns: repeat(7, 40px);
+	grid-template-rows: repeat(6, 40px);
+	gap: 3px;
+	padding-left: 0;
+}
+
+ li {
+	border: 1px solid gray;
+	text-align: center;
+	padding: 12px 0;
+
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+
+	/* 
+	centruje pouze jeden radek
+	line-height: 40px;
+	text-align: center; */
+}
+
+.kalendar .zahlavi {
+	background-color:rgb(160, 38, 1);
+	color: #fff;
+	border: none;
+}
+
+.predchozi,
+.nasledujici {
+	background-color: lightgray;
+	color: gray;
+	border: none;
+}
+

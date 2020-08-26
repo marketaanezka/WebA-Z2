@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BEM ukázky</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Ukázky použití BEM</h1>
+
+	<h2>Komponenta bez vnitřních elementů a modifikátorů</h2>
+
+	<button class="button">
+		Tlačítko
+	</button>
+
+
+	<h2>Komponenta s modifikátorem</h2>
+
+	<button class="button button--primary">
+		Primární tlačítko
+	</button>
+
+	<button class="button button--secondary">
+		Sekundární tlačítko
+	</button>
+
+	<button class="button button--primary button--big">
+		Velké primární tlačítko
+	</button>
+
+
+
+	<h2>Komponenta s vnitřními elementy</h2>
+
+	<figure class="photo">
+		<img class="photo__image" src="foto.jpg">
+		<figcaption class="photo__caption">
+			Jsem úžasná krajinka
+		</figcaption>
+	</figure>
+
+
+	<h2>Komponenta s vnitřními elementy s modifikátorem</h2>
+
+	<figure class="photo">
+		<img class="photo__image photo__image--framed" src="foto.jpg">
+		<figcaption class="photo__caption">
+			Jsem úžasná krajinka
+		</figcaption>
+	</figure>
+
+	<h2>Komponenta s vnitřními vnořenými elementy</h2>
+
+	<figure class="photo">
+		<img class="photo__image" src="foto.jpg">
+		<figcaption class="photo__caption">
+			A krajinka řekla:
+			<blockquote class="photo__quote">
+				Jsem úžasná krajinka
+			</blockquote>
+		</figcaption>
+	</figure>
+
+</body>
+</html>

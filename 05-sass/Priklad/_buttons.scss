@@ -1,0 +1,22 @@
+
+
+button {
+  color: $buttonText;
+  border-radius: $myButton;
+  background-color: $myColor;
+  font-family: $buttonFont;
+  padding: 5px 10px;
+}
+
+a {
+  color: $myColor;
+
+  &:hover {
+    color: $darkerColor;
+  }
+}
+
+
+.btn {
+  @include button-style;
+}

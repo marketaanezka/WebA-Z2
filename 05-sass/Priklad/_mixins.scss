@@ -1,0 +1,26 @@
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // column potreba aby se centrovaly pod sebe
+  flex-direction: column; 
+
+}
+
+@mixin button-style {
+  background-color: lightgreen;
+  color: darkblue;
+  letter-spacing: .2em;
+  border-radius: 10px;
+  box-shadow: -1px 0px 7px 0px greenyellow;
+  margin: 20px;
+  transition: background-color .5s ease, color 1s ease-in-out, box-shadow 1s ease-out;
+
+  &:hover {
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+    box-shadow: -1px 0px 7px 0px blue;
+  }
+}

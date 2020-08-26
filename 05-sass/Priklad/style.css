@@ -1,0 +1,67 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  color: darkred;
+  background-color: #dfe445;
+  border: 2px solid #ff5858;
+}
+
+.box {
+  height: 200px;
+  background-color: gray;
+  border: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  color: #fff;
+  border-radius: 5em;
+  background-color: darkred;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px 10px;
+}
+
+a {
+  color: darkred;
+}
+
+a:hover {
+  color: #ff5858;
+}
+
+.btn {
+  background-color: lightgreen;
+  color: darkblue;
+  letter-spacing: .2em;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 0px 7px 0px greenyellow;
+          box-shadow: -1px 0px 7px 0px greenyellow;
+  margin: 20px;
+  -webkit-transition: background-color .5s ease, color 1s ease-in-out, -webkit-box-shadow 1s ease-out;
+  transition: background-color .5s ease, color 1s ease-in-out, -webkit-box-shadow 1s ease-out;
+  transition: background-color .5s ease, color 1s ease-in-out, box-shadow 1s ease-out;
+  transition: background-color .5s ease, color 1s ease-in-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out;
+}
+
+.btn:hover {
+  background-color: darkolivegreen;
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 0px 7px 0px blue;
+          box-shadow: -1px 0px 7px 0px blue;
+}
+/*# sourceMappingURL=style.css.map */

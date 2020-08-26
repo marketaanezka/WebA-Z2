@@ -1,0 +1,40 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+
+/* ---------------------------------------------------- */
+
+.kontejner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 300px);
+  gap: 2px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 
+ctvrte dite
+.foto:nth-child(4) {
+  border: 4px solid gold;
+} */
+
+/* KAZDE CTVRTE DITE 
+.foto:nth-child(4n) {
+  border: 4px solid gold;
+}*/
+
+/* V KAZDE CTVERICI TEN DRUHY
+NEBO KAZDY CTVRTY POCINAJE TIM DRUHYM, MUZE TAM BYT I VIC NEZ 4 (4n+7)  
+.foto:nth-child(4n+2) {
+  border: 4px solid gold;
+}*/
+
+.foto:nth-child(5n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}

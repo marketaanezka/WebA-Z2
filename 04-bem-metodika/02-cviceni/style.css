@@ -1,0 +1,65 @@
+.card {
+  width: 600px;
+  height: 800px;
+}
+
+.card__body {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(214, 192, 164);
+  font-family: monospace;
+}
+
+.card__header {
+  width: 100%;
+  height: 50%;
+}
+
+.card__title-img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__text {
+  padding: 20px;
+}
+
+.card__title {
+margin: 0;
+font-size: 30px;
+}
+
+.card__content {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.card__reactions {
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    gap: 2em;
+}
+
+.card__reaction-button::before {
+  content: "";
+  display: inline-block;
+  width: .8em;
+  height: .8em;
+  margin-right: .5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.card__reaction--like::before {
+    background-image: url('heart-shape-outline.png');
+  
+}
+
+.card__reaction--comment::before {
+  background-image: url('comment.png');
+}
+

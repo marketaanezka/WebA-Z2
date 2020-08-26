@@ -1,0 +1,86 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+.sloupec {
+	padding: 20px;
+}
+
+.hlavicka	{ background-color: #2ecc71; }
+.obsah		{ background-color: #f1c40f; }
+.menu		{ background-color: #3498db; }
+.reklama1	{ background-color: #e74c3c; }
+.reklama2	{ background-color: #12cbC4; }
+.paticka	{ background-color: #9b59b6; }
+
+/* ---------------------------------------------------- */
+
+.kontejner {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	gap: 10px;
+	grid-template-areas: 
+	"hlavicka"
+	"obsah"
+	"menu"
+	"reklama1"
+	"reklama2"
+	"paticka"
+	;
+
+}
+
+.hlavicka {
+	grid-area: hlavicka;
+}
+
+.menu {
+	grid-area: menu;
+}
+
+.obsah {
+	grid-area: obsah;
+}
+
+.reklama1 {
+	grid-area: reklama1;
+}
+
+.reklama2 {
+	grid-area: reklama2;
+}
+
+.paticka {
+	grid-area: paticka;
+}
+
+@media only screen and (min-width: 640px){
+	.kontejner {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: 
+		"hlavicka  hlavicka"
+		"obsah     obsah"
+		"reklama1  reklama2"
+		"menu      menu"
+		"paticka   paticka"
+		;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.kontejner {
+grid-template-columns: 300px 1fr 250px;
+grid-template-rows: auto 250px 1fr auto;
+grid-template-areas: 
+"hlavicka hlavicka hlavicka"
+"menu 	  obsah 	 reklama1"
+"menu 	  obsah 	 reklama2"
+"paticka  paticka  paticka"
+;
+	}
+}
