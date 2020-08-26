@@ -1,98 +1,158 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cestovka</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cestovka</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="content-wrap">
+      <!-- header -->
+      <div class="header">
+        <img
+          class="header__logo"
+          src="images/logo.svg"
+          alt="Cestovka logo"
+          width="237"
+          height="30"
+        />
 
-	<img src="images/logo.svg" alt="Cestovka logo" width="237" height="30">
+        <nav class="header__menu">
+          <a class="header__menu-item" href="#">Last minute</a>
+          <a class="header__menu-item" href="#">Destinace</a>
+          <a class="header__menu-item" href="#">Časté otázky</a>
+        </nav>
+      </div>
+      <div class="top-offer">
+        <div class="top-offer__item offer-tile">
+          <img src="images/palmy.jpg" alt="Palmy" />
+          <div>17&nbsp;600 Kč</div>
+          <h3>Pohoda pod palmami</h3>
+          <p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+        </div>
 
-	<nav>
-		<a href="#">Last minute</a>
-		<a href="#">Destinace</a>
-		<a href="#">Časté otázky</a>
-	</nav>
+        <!-- top-offer -->
+        <div class="top-offer__item offer-tile">
+          <img src="images/jezero2.jpg" alt="Jezero" />
+          <div>8&nbsp;490 Kč</div>
+          <h3>Klid u jezera</h3>
+        </div>
 
+        <div class="top-offer__item offer-tile">
+          <img src="images/nakole.jpg" alt="Palmy" />
+          <div>4&nbsp;990 Kč</div>
+          <h3>Výlet na kole</h3>
+        </div>
+      </div>
 
-	<img src="images/palmy.jpg" alt="Palmy">
-	<div>17&nbsp;600 Kč</div>
-	<h3>Pohoda pod palmami</h3>
-	<p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+      <!-- benefits -->
+      <div class="benefits">
+        <div class="benefits__item benefits__tile">
+          <img src="images/map.svg" alt="Ikona" />
+          <h3>Výhoda</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus saepe.
+          </p>
+        </div>
 
-	<img src="images/jezero2.jpg" alt="Jezero">
-	<div>8&nbsp;490 Kč</div>
-	<h3>Klid u jezera</h3>
+        <div class="benefits__item benefits__tile">
+          <img src="images/plane.svg" alt="Ikona" />
+          <h3>Výhoda</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus saepe.
+          </p>
+        </div>
 
-	<img src="images/nakole.jpg" alt="Palmy">
-	<div>4&nbsp;990 Kč</div>
-	<h3>Výlet na kole</h3>
+        <div class="benefits__item benefits__tile">
+          <img src="images/globe.svg" alt="Ikona" />
+          <h3>Výhoda</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus saepe.
+          </p>
+        </div>
 
+        <div class="benefits__item benefits__tile">
+          <img src="images/shield.svg" alt="Ikona" />
+          <h3>Výhoda</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus saepe.
+          </p>
+        </div>
+      </div>
 
-	<!-- dalsi sekce -->
+      <!-- last-minute -->
 
-	<img src="images/map.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+      <h2>Last minute zájezdy</h2>
 
-	<img src="images/plane.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+      <div class="last-minute">
+        <div class="last-minute__item offer-tile">
+          <img src="images/mestecko.jpg" alt="Palmy" />
+          <div>17&nbsp;600 Kč</div>
+          <h3>Pohoda pod palmami</h3>
+          <p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+        </div>
 
-	<img src="images/globe.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+        <div class="last-minute__item offer-tile">
+          <img src="images/plachetnice.jpg" alt="Palmy" />
+          <div>8&nbsp;490 Kč</div>
+          <h3>Klid u jezera</h3>
+        </div>
 
-	<img src="images/shield.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+        <div class="last-minute__item offer-tile">
+          <img src="images/plaz.jpg" alt="Palmy" />
+          <div>4&nbsp;990 Kč</div>
+          <h3>Výlet na kole</h3>
+        </div>
+      </div>
 
+      <!-- news -->
 
-	<!-- dalsi sekce -->
+      <h2>Novinky</h2>
+      <div class="news">
+        <div class="news__item news-tile">
+          <p>15. 8. 2020</p>
+          <h3>Titulek novinky</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            ratione aliquam repudiandae vitae dignissimos.
+          </p>
+        </div>
 
-	<h2>Last minute zájezdy</h2>
+        <div class="news__item news-tile">
+          <p>15. 8. 2020</p>
+          <h3>Titulek novinky</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            ratione aliquam repudiandae vitae dignissimos.
+          </p>
+        </div>
 
-	<img src="images/palmy.jpg" alt="Palmy">
-	<div>17&nbsp;600 Kč</div>
-	<h3>Pohoda pod palmami</h3>
-	<p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+        <div class="news__item news-tile">
+          <p>15. 8. 2020</p>
+          <h3>Titulek novinky</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            ratione aliquam repudiandae vitae dignissimos.
+          </p>
+        </div>
+      </div>
 
-	<img src="images/jezero2.jpg" alt="Palmy">
-	<div>8&nbsp;490 Kč</div>
-	<h3>Klid u jezera</h3>
+      <!-- footer -->
 
-	<img src="images/nakole.jpg" alt="Palmy">
-	<div>4&nbsp;990 Kč</div>
-	<h3>Výlet na kole</h3>
-
-
-	<!-- dalsi sekce -->
-
-	<h2>Novinky</h2>
-
-	<p>15. 8. 2020</p>
-	<h3>Titulek novinky</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione aliquam repudiandae vitae dignissimos.</p>
-
-
-	<p>15. 8. 2020</p>
-	<h3>Titulek novinky</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione aliquam repudiandae vitae dignissimos.</p>
-
-
-	<p>15. 8. 2020</p>
-	<h3>Titulek novinky</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione aliquam repudiandae vitae dignissimos.</p>
-
-
-	<!-- dalsi sekce -->
-
-	<p>&copy2020, Web od A do Z #2</p>
-
-</body>
+      <div class="footer">
+        <p>&copy2020, Web od A do Z #2</p>
+      </div>
+    </div>
+  </body>
 </html>
