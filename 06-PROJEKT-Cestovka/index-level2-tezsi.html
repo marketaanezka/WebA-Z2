@@ -32,60 +32,72 @@
       </div>
 
       <!-- top-offer -->
-      <div class="top-offer">
-        <div class="top-offer__item offer-tile">
-          <img src="images/palmy.jpg" alt="Palmy" />
-          <div>17&nbsp;600 Kč</div>
-          <h3>Pohoda pod palmami</h3>
-          <p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+      <div class="tile-grid">
+        <div class="offer-tile">
+          <img class="offer-tile__img" src="images/palmy.jpg" alt="Palmy" />
+          <div class="offer-tile__content">
+            <div class="offer-tile__price">17&nbsp;600 Kč</div>
+            <div class="offer-tile__text">
+              <h3 class="offer-tile__title">Pohoda pod palmami</h3>
+              <p class="offer-tile__description">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+            </div>
+          </div>
         </div>
 
-        <div class="top-offer__item offer-tile">
-          <img src="images/jezero2.jpg" alt="Jezero" />
-          <div>8&nbsp;490 Kč</div>
-          <h3>Klid u jezera</h3>
+        <div class="offer-tile">
+          <img class="offer-tile__img" src="images/jezero2.jpg" alt="Jezero" /> 
+          <div class="offer-tile__content">
+            <div class="offer-tile__price">8&nbsp;490 Kč</div>
+            <div class="offer-tile__text">
+              <h3 class="offer-tile__title">Klid u jezera</h3>
+            </div>
+          </div> 
         </div>
 
-        <div class="top-offer__item offer-tile">
-          <img src="images/nakole.jpg" alt="Palmy" />
-          <div>4&nbsp;990 Kč</div>
-          <h3>Výlet na kole</h3>
+        <div class="offer-tile">
+          <img class="offer-tile__img" src="images/nakole.jpg" alt="nakole" /> 
+          <div class="offer-tile__content">
+            <div class="offer-tile__price">8&nbsp;990 Kč</div>
+            <div class="offer-tile__text">
+              <h3 class="offer-tile__title">Výlet na kole</h3>
+            </div>
+          </div> 
         </div>
       </div>
 
       <!-- benefits -->
-      <div class="benefits">
-        <div class="benefits__item benefits__tile">
-          <img src="images/map.svg" alt="Ikona" />
-          <h3>Výhoda</h3>
-          <p>
+      <div class="benefit-list">
+        <div class="benefit-tile">
+          <img class="benefit-tile__icon" src="images/map.svg" alt="Ikona" />
+          <h3 class="benefit-tile__title">Výhoda</h3>
+          <p class="benefit-tile__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus saepe.
+          </p>
+        </div>
+
+        <div class="benefit-tile">
+          <img class="benefit-tile__icon" src="images/plane.svg" alt="Ikona" />
+          <h3 class="benefit-tile__title">Výhoda</h3>
+          <p class="benefit-tile__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus saepe.
+          </p>
+        </div>
+
+        <div class="benefit-tile">
+          <img class="benefit-tile__icon" src="images/globe.svg" alt="Ikona" />
+          <h3 class="benefit-tile__title">Výhoda</h3>
+          <p class="benefit-tile__description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Voluptatibus saepe.
           </p>
         </div>
 
         <div class="benefits__item benefits__tile">
-          <img src="images/plane.svg" alt="Ikona" />
-          <h3>Výhoda</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptatibus saepe.
-          </p>
-        </div>
-
-        <div class="benefits__item benefits__tile">
-          <img src="images/globe.svg" alt="Ikona" />
-          <h3>Výhoda</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptatibus saepe.
-          </p>
-        </div>
-
-        <div class="benefits__item benefits__tile">
-          <img src="images/shield.svg" alt="Ikona" />
-          <h3>Výhoda</h3>
-          <p>
+          <img class="benefit-tile__icon" src="images/shield.svg" alt="Ikona" />
+          <h3 class="benefit-tile__title">Výhoda</h3>
+          <p class="benefit-tile__description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Voluptatibus saepe.
           </p>
@@ -96,21 +108,21 @@
 
       <h2>Last minute zájezdy</h2>
 
-      <div class="last-minute">
-        <div class="last-minute__item offer-tile">
+      <div class="offer">
+        <div class="offer__item offer-tile">
           <img src="images/mestecko.jpg" alt="Palmy" />
           <div>17&nbsp;600 Kč</div>
           <h3>Pohoda pod palmami</h3>
           <p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
         </div>
 
-        <div class="last-minute__item offer-tile">
+        <div class="offer__item offer-tile">
           <img src="images/plachetnice.jpg" alt="Palmy" />
           <div>8&nbsp;490 Kč</div>
           <h3>Klid u jezera</h3>
         </div>
 
-        <div class="last-minute__item offer-tile">
+        <div class="offer__item offer-tile">
           <img src="images/plaz.jpg" alt="Palmy" />
           <div>4&nbsp;990 Kč</div>
           <h3>Výlet na kole</h3>
@@ -121,7 +133,7 @@
 
       <h2>Novinky</h2>
       <div class="news">
-        <div class="news__item news-tile">
+        <div class="news__item">
           <p>15. 8. 2020</p>
           <h3>Titulek novinky</h3>
           <p>
@@ -130,7 +142,7 @@
           </p>
         </div>
 
-        <div class="news__item news-tile">
+        <div class="news__item">
           <p>15. 8. 2020</p>
           <h3>Titulek novinky</h3>
           <p>
@@ -139,7 +151,7 @@
           </p>
         </div>
 
-        <div class="news__item news-tile">
+        <div class="news__item">
           <p>15. 8. 2020</p>
           <h3>Titulek novinky</h3>
           <p>
