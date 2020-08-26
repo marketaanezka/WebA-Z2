@@ -1,0 +1,48 @@
+/* .boxik + .popisek {
+  background-color: red;
+  transition: background-color .5s ease;
+}
+
+
+.boxik:checked + .popisek {
+  background-color: blue;
+}
+
+.fa-hamburger {
+  color: red;
+}
+.boxik {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+
+.boxik:checked ~ .menu {
+  background-color: blue;
+  display: block;
+} */
+
+.boxik, 
+.menu {
+  display: none;
+}
+
+.burger {
+  width: 40px;
+}
+
+.burger__icon {
+  width: 100%;
+  transition: width 1s ease;
+}
+
+.boxik:checked + .burger__icon {
+  width: 0%
+}
+
+.boxik:checked ~ .menu {
+  display: block;
+}

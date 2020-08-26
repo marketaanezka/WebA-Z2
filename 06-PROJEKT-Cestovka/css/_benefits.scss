@@ -1,0 +1,26 @@
+.benefit-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefit-tile {
+  background-color: $color-light;
+  @include flex-center;
+  padding: $pad;
+}
+
+.benefit-tile__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.benefit-tile__title {
+  color: $color-primary;
+  padding-top: $text-space;
+}
+
+.benefit-tile__description {
+text-align: center;
+padding-top: $text-space;
+}

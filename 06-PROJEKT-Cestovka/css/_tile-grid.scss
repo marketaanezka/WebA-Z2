@@ -5,13 +5,17 @@
   gap: 20px;
 }
 
-.offer-tile:first-child {
+.tile-grid :first-child {
 grid-column: span 2;
 grid-row: span 2;
 }
 
-// .tile-grid--right {
-  
-// }
+.tile-grid--right {
+  grid-auto-flow: dense;
+}
+
+.tile-grid--right :first-child {
+  grid-column: span 2 / -1;
+}
 
 
