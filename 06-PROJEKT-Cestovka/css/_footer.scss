@@ -1,0 +1,10 @@
+.footer {
+  background-color: $color-dark;
+  height: 60px;
+  @include flex-center;
+}
+
+.footer__text {
+  text-align: center;
+  color: $color-bright;
+}

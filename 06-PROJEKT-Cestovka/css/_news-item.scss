@@ -2,5 +2,18 @@
   background-color: $color-light;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: $pad;
+}
+
+.news-item__date {
+  color: $color-grey;
+}
+
+.news-item__title {
+  padding-top: $text-space;
+  color: $color-primary;
+}
+
+.news-item__description {
+  padding-top: $text-space;
 }

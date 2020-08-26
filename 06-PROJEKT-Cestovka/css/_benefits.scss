@@ -1,7 +1,7 @@
 .benefit-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: $pad;
 }
 
 .benefit-tile {
@@ -21,6 +21,18 @@
 }
 
 .benefit-tile__description {
-text-align: center;
-padding-top: $text-space;
+  text-align: center;
+  padding-top: $text-space;
+}
+
+@media (min-width: 800px) {
+  .benefit-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefit-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

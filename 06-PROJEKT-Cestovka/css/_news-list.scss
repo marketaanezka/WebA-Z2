@@ -1,6 +1,12 @@
 .news-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  gap: 20px;
+  gap: $pad;
+}
+
+@media (min-width: 800px) {
+  .news-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

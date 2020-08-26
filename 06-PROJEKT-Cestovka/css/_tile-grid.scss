@@ -1,21 +1,35 @@
 .tile-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto;
   grid-auto-rows: 200px;
-  gap: 20px;
+  gap: $pad;
 }
 
-.tile-grid :first-child {
-grid-column: span 2;
-grid-row: span 2;
+@media (min-width: 800px) {
+  .tile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tile-grid :first-child {
+    grid-column: span 2;
+  }
 }
 
-.tile-grid--right {
-  grid-auto-flow: dense;
+@media (min-width: 1200px) {
+  .tile-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    & :first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+
+  .tile-grid--right {
+    grid-auto-flow: dense;
+
+    :first-child {
+      grid-column: span 2 / -1;
+    }
+  }
 }
-
-.tile-grid--right :first-child {
-  grid-column: span 2 / -1;
-}
-
-
