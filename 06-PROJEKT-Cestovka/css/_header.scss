@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+// .header__logo {
+//   padding: 10px;
+// }
+
+.header__menu {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__item {
+  text-decoration: none;
+  color: $color-primary;
+  font-weight: bold;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  @include flex-center;
+  
+  &:hover {
+    background-color: $color-primary;
+    color: $color-bright;
+  }
+
+  transition: background-color .5s ease, color .5s ease;
+}
