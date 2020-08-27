@@ -2,12 +2,17 @@
 .check-burger{
   display: none;
 }
-.header__menu {
-  max-width: 0;
-}
+
+// .header__menu-wrap {
+//   overflow: hidden;
+// }
+
+// .header__menu {
+//   transform: translateX(100%);
+// }
 
 .check-burger:checked ~ .header__menu {
-  max-width: 5000px;
+  transform: translateX(100%);
 }
 
 .burger-menu {
@@ -27,6 +32,6 @@
   }
 
   .header__menu {
-    max-width: 5000px;
+    transform: translateX(100%);
   }
 }
