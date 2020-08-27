@@ -3,11 +3,11 @@
   display: none;
 }
 .header__menu {
-  display: none;
+  max-width: 0;
 }
 
 .check-burger:checked ~ .header__menu {
-  display: flex;
+  max-width: 5000px;
 }
 
 .burger-menu {
@@ -27,6 +27,6 @@
   }
 
   .header__menu {
-    display: flex;
+    max-width: 5000px;
   }
 }
